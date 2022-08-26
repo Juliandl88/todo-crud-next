@@ -1,8 +1,18 @@
 import { useTask } from '../context/TaskContext';
+import Layout from "../components/Layout"
 
 const Home = () => {
+
+  const { tasks } = useTask();
+
+  console.log(tasks);
+
   return (
-    <div>Home - Inicio </div>
+  
+    <Layout>
+      <div>Home - Inicio </div>
+    </Layout>
+
   )
 }
 
