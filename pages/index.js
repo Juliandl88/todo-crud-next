@@ -8,11 +8,11 @@ const Home = () => {
   console.log(tasks);
 
   return (
-  
+       
     <Layout>
       <div>Home - Inicio </div>
     </Layout>
-
+    
   )
 }
 

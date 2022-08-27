@@ -4,9 +4,10 @@ const Layout = ({ children }) => {
       <header>
         <h1>Task App</h1>
         <div>
-          <botton>Add Task</botton>
+          <button  className="bg-green-300 px-2 py-3">Add Task</button>
         </div>
       </header>
+      <hr/>
       { children }
     </div>
   );

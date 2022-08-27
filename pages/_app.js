@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import {TasksProvider} from "../context/taskContext"
+import {TasksProvider} from "../context/TaskContext"
 
 function MyApp({ Component, pageProps }) {
   return 
