@@ -1,9 +1,11 @@
-import { useTask } from '../context/TaskContext';
+import { useTasks } from '../context/TasksContext';
 import Layout from "../components/Layout"
+
+
 
 const Home = () => {
 
-  const { tasks } = useTask();
+  const { tasks } = useTasks();
 
   console.log(tasks);
 
