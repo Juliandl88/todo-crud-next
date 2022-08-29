@@ -1,4 +1,4 @@
-import { AiOutlinePlus } from 'react-icons/ai';
+// import { AiOutlinePlus } from 'react-icons/ai';
 
 const Layout = ({ children }) => {
   return (
@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
         <h1 className="font-black text-lg">Task App</h1>
         <div className="flex-grow text-right">
           <button className="bg-green-500 px-2 py-3 hover:bg-green-400 font-bold rounded-sm">
-          <AiOutlinePlus className="mr-2" />
+           
           Add Task
           </button>
         </div>
