@@ -11,5 +11,9 @@ export const TasksProvider = ({ children }) => {
     { id: "1", title: "first task", description: "some task" },
   ]);
 
-  return <TaskContext.Provider value={{}}>{children}</TaskContext.Provider>;
+  const createTask = (title, description) => {
+     setTasks([...tasks, {title, description, id:"2"}])
+  }
+
+  return <TaskContext.Provider value={{tasks, createTask}}>{children}</TaskContext.Provider>;
 };
