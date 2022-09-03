@@ -12,7 +12,7 @@ const Home = () => {
   return (
        
     <Layout>
-      <div>Home </div>
+      <div>Home - inicio</div>
     </Layout>
     
   )
