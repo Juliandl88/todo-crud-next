@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
           </button>
         </div>
       </header>
-      <main className="px-28 ">{children}</main>
+      <main className="px-28 py-10 ">{children}</main>
     </div>
   );
 };
