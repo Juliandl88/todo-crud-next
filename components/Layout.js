@@ -9,27 +9,27 @@ const Layout = ({ children }) => {
   const { tasks } = useTasks()
 
   return (
-    <div className="h-screen bg-gray-900 text-white overflow-auto">
-      <header className="flex bg-gray-800 text-white px-28 py-5 items-center">
+    <div className="h-screen overflow-auto text-white bg-gray-900">
+      <header className="flex items-center py-5 text-white bg-gray-800 px-28">
         <Link href="/">
         <a>
-        <h1 className="font-black text-lg">Task App</h1>
+        <h1 className="text-lg font-black">Task App</h1>
         </a>
           
         </Link>
 
-        <span className="ml-2 text-grey-400 font-bold">
+        <span className="ml-2 font-bold text-grey-400">
           {tasks.length} Tasks
         </span>
 
         <div className="flex-grow text-right">
-          <button onClick={() => router.push ("/new")}className="bg-green-500 px-2 py-3 hover:bg-green-400 font-bold rounded-sm inline-flex items-center">
+          <button onClick={() => router.push ("/new")}className="inline-flex items-center px-2 py-3 font-bold bg-green-500 rounded-sm hover:bg-green-400">
             <AiOutlinePlus className="mr-2" />
-            Add Task
+            Add new Task
           </button>
         </div>
       </header>
-      <main className="px-28 py-10 ">{children}</main>
+      <main className="py-10 px-28 ">{children}</main>
     </div>
   );
 };

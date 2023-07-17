@@ -13,7 +13,7 @@ function Home() {
       <div className="flex justify-center">
         {tasks.length === 0 ? (
           <div className="block">
-            <h2 className="text-2xl">There are no tasks</h2>
+            <h2 className="text-2xl">There aren´t tasks</h2>
             <VscTasklist size="8rem" />
           </div>
         ) : (
@@ -21,15 +21,15 @@ function Home() {
             {tasks.map((task, i) => (
               <div
                 key={task.id}
-                className="bg-gray-700 hover:bg-gray-600 cursor-pointer px-20 py-5 m-2 flex justify-between"
+                className="flex justify-between px-20 py-5 m-2 bg-gray-700 cursor-pointer hover:bg-gray-600"
                 onClick={() => router.push("/edit/" + task.id)}
               >
-                <span className="text-5xl mr-5">{i}</span>
+                <span className="mr-5 text-5xl">{i}</span>
                 <div>
                   <div className="flex justify-between">
                     <h1 className="font-bold">{task.title}</h1>
                     <button
-                      className="bg-red-700 hover:bg-red-600 px-3 py-1 inline-flex items-center"
+                      className="inline-flex items-center px-3 py-1 bg-red-700 hover:bg-red-600"
                       onClick={(e) => {
                         e.stopPropagation();
                         deleteTask(task.id);
