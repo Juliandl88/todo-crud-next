@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
         <div className="flex-grow text-right">
           <button onClick={() => router.push ("/new")}className="inline-flex items-center px-2 py-3 font-bold bg-green-500 rounded-sm hover:bg-green-400">
             <AiOutlinePlus className="mr-2" />
-            Add new Task
+            New Task
           </button>
         </div>
       </header>
