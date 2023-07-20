@@ -66,7 +66,7 @@ const TaskFormPage = () => {
             className="bg-green-500 hover:bg-green-400 px-4 py-2 rounded-sm disabled:opacity-30"
             disabled={!task.title}
           >
-            Save
+            Save Task
           </button>
         </form>
       </div>

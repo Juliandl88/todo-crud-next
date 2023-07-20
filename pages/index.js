@@ -35,7 +35,7 @@ function Home() {
                         deleteTask(task.id);
                       }}
                     >
-                      <VscTrash className="mr-2" /> Delete
+                      <VscTrash className="mr-2" /> Delete Task
                     </button>
                   </div>
                   <p className="text-gray-300">{task.description}</p>
