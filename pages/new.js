@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import { useTasks } from "../context/TasksContext";
 import { useRouter } from "next/router";
+import Swal from "sweetalert2";
 
 const inititalState = {
   title: "",
@@ -65,8 +66,17 @@ const TaskFormPage = () => {
           <button
             className="bg-green-500 hover:bg-green-400 px-4 py-2 rounded-sm disabled:opacity-30"
             disabled={!task.title}
+            onClick={() => {
+              Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Your task has been saved",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+            }}
           >
-            Save 
+            Save
           </button>
         </form>
       </div>

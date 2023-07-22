@@ -3,6 +3,7 @@ import { useTasks } from "../context/TasksContext";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 import { VscTrash, VscTasklist } from "react-icons/vsc";
+import Swal from "sweetalert2";
 
 function Home() {
   const { tasks, deleteTask } = useTasks();
@@ -32,7 +33,25 @@ function Home() {
                       className="inline-flex items-center px-3 py-1 bg-red-700 hover:bg-red-600"
                       onClick={(e) => {
                         e.stopPropagation();
-                        deleteTask(task.id);
+                        Swal.fire({
+                          title: "Are you sure?",
+                          text: "You won't be able to revert this!",
+                          icon: "warning",
+                          showCancelButton: true,
+                          confirmButtonColor: "#3085d6",
+                          cancelButtonColor: "#d33",
+                          confirmButtonText: "Yes, delete it!",
+                        }).then((result) => {
+                          if (result.isConfirmed) {
+                            deleteTask(task.id);
+                            Swal.fire(
+                              "Deleted!",
+                              "Your task has been deleted.",
+                              "success"
+                            );
+                          }
+                        });
+                       
                       }}
                     >
                       <VscTrash className="mr-2" /> Delete
