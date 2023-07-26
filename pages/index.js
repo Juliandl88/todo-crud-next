@@ -59,6 +59,7 @@ function Home() {
                   </div>
                   <p className="text-gray-300">{task.description}</p>
                   <span className="text-gray-400">{task.id}</span>
+                  <span className="text-gray-400">{task.id}</span>
                 </div>
               </div>
             ))}
