@@ -54,12 +54,12 @@ function Home() {
                        
                       }}
                     >
-                      <VscTrash className="mr-2" /> Delete Task
+                      <VscTrash className="mr-2" /> Delete
                     </button>
                   </div>
                   <p className="text-gray-300">{task.description}</p>
                   <span className="text-gray-400">{task.id}</span>
-                  <span className="text-gray-400">{task.id}</span>
+                 
                 </div>
               </div>
             ))}
