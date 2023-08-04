@@ -76,7 +76,7 @@ const TaskFormPage = () => {
               });
             }}
           >
-            Save 
+            Save Task
           </button>
         </form>
       </div>
