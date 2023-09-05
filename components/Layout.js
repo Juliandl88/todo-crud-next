@@ -13,13 +13,13 @@ const Layout = ({ children }) => {
       <header className="flex items-center py-5 text-white bg-gray-800 px-28">
         <Link href="/">
         <a>
-        <h1 className="text-lg font-black">Task App</h1>
+        <h1 className="text-lg font-black">Task APP</h1>
         </a>
           
         </Link>
 
         <span className="ml-2 font-bold text-grey-400">
-          {tasks.length} Tasks
+          {tasks.length} Task
         </span>
 
         <div className="flex-grow text-right">
