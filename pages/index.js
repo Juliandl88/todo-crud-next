@@ -14,7 +14,7 @@ function Home() {
       <div className="flex justify-center">
         {tasks.length === 0 ? (
           <div className="block">
-            <h2 className="text-2xl">There aren´t tasks</h2>
+            <h2 className="text-2xl">There are not tasks</h2>
             <VscTasklist size="8rem" />
           </div>
         ) : (
@@ -54,7 +54,7 @@ function Home() {
                        
                       }}
                     >
-                      <VscTrash className="mr-2" /> Delete Task
+                      <VscTrash className="mr-2" /> Delete
                     </button>
                   </div>
                   <p className="text-gray-300">{task.description}</p>
