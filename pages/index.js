@@ -15,7 +15,6 @@ function Home() {
         {tasks.length === 0 ? (
           <div className="block">
             <h2 className="text-2xl">There are not tasks</h2>
-            <p className="text-2xl">Please add one</p>
             <VscTasklist size="8rem" />
           </div>
         ) : (
